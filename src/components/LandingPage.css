@@ -1,0 +1,117 @@
+/* Container */
+.container {
+    display: flex;
+    height: 100vh;
+  }
+  .left-section {
+    width: 50%;
+    background: linear-gradient(to bottom, #0F1D3D, #1a2b4d);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    margin-top: 0; /* Remove the extra space */
+}
+
+  .left-section h2{
+    font-size: 34px !important;
+    margin-top: 50px;
+  }
+  
+  .logo {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+    margin-left: 200px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    max-width: 80%;
+  }
+  
+  /* Right Section - Registration */
+  .right-section {
+    width: 50%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  /* Input Fields */
+  .input-field {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Buttons */
+  .btn {
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #E74C3C;;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  
+  .btn:hover {
+    background-color: #E74C3C;
+  }
+  .right-section h2{
+    font-size: 55px !important;
+  }
+  .right-section p{
+    font-size: 16px;
+    color: #0F1D3D;
+  }
+  
+  .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px; /* Adjust size as needed */
+    height: auto;
+    padding: 10px; /* Optional: Adds some space around */
+}
+  /* Forgot Password */
+  .forgot-password {
+    font-size: 12px;
+    text-decoration: underline;
+    color: #0F1D3D;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .forgot-password:hover {
+    color: #0F1D3D;
+  }
+  

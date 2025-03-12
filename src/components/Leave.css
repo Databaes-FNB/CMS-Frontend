@@ -1,0 +1,80 @@
+.leave-container,
+.leave-container input[type="date"],
+.leave-container select {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  margin-bottom: 15px; /* Add space between the fields */
+}
+/* Align the input field to the right */
+.leave-input {
+  width: 50%; /* Make sure the input spans the full width of its container */
+  margin-left: 380px;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+.leave-container input[type="date"]:focus,
+.leave-container select:focus {
+  border-color: #007bff;
+  outline: none;
+  background-color: #e9f4ff;
+}
+
+/* Additional styles for the layout and form */
+.leave-container {
+  margin: 20px auto;
+}
+
+.leave-container h2{
+  align-items: center;
+  text-align: center;
+  font-size: 34px !important;
+}
+
+.leave-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.leave-container table, th, td {
+  border: 1px solid #ccc;
+}
+
+.leave-container th, td {
+  padding: 25px;
+  text-align: center;
+}
+/* Submit Button */
+.submit-btn button {
+  padding: 10px 60px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-top: 60px;
+}
+
+.submit-btn button:hover {
+  background-color: #45a049;
+}
+
+.status-message {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.status-message strong {
+  color: #4CAF50;
+}
