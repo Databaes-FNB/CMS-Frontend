@@ -1,0 +1,151 @@
+/* MentorDashboard.css */
+.mentor-dashboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin-left: 250px; /* Add margin to push content away from the sidebar */
+  transition: margin-left 0.3s ease;
+}
+
+.mentor-dashboard-header {
+  text-align: center;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.mentor-dashboard-header h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.mentor-dashboard-header p {
+  font-size: 1.2em;
+}
+
+.btn {
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-size: 1em;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.btn.logout-btn {
+  background-color: #f44336;
+}
+
+.students-section {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.students-section h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+.students-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.student-card {
+  width: 250px;
+  padding: 15px;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.mentor-resources {
+  width: 80%;
+  text-align: center;
+}
+
+.mentor-resources h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+.mentor-resources ul {
+  list-style-type: none;
+}
+
+.mentor-resources li {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.mentor-resources li a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+.mentor-resources li a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .mentor-dashboard-container {
+    margin-left: 0;  /* Remove the left margin on smaller screens */
+  }
+
+  .mentor-dashboard-header h1 {
+    font-size: 1.6em;
+  }
+
+  .mentor-dashboard-header p {
+    font-size: 1em;
+  }
+
+  .students-list {
+    gap: 15px;
+  }
+
+  .student-card {
+    width: 200px;
+  }
+
+  .mentor-resources h2 {
+    font-size: 1.5em;
+  }
+
+  .mentor-resources li {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .mentor-dashboard-header h1 {
+    font-size: 1.4em;
+  }
+
+  .mentor-dashboard-header p {
+    font-size: 0.9em;
+  }
+
+  .students-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .student-card {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .mentor-resources h2 {
+    font-size: 1.4em;
+  }
+
+  .mentor-resources li {
+    font-size: 1em;
+  }
+}
