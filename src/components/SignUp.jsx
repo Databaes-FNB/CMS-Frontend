@@ -14,6 +14,9 @@ function SignUp() {
     stream: "",
   });
 
+  // Regular expression for password validation
+  const passwordRegex = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+
   const handleRegisterChange = (e) => {
     setRegisterData({ ...registerData, [e.target.name]: e.target.value });
   };
@@ -28,6 +31,12 @@ function SignUp() {
     // Required fields validation
     if (!registerData.fullName || !registerData.email || !registerData.password || !registerData.confirmPassword || !registerData.cohort || !registerData.stream) {
       alert("All fields are required!");
+      return;
+    }
+
+    // Password strength check
+    if (!passwordRegex.test(registerData.password)) {
+      alert("Password must be at least 8 characters long, contain an uppercase letter, a number, and a special character.");
       return;
     }
 
