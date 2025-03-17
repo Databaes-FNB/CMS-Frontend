@@ -1,0 +1,114 @@
+/* General Layout */
+.signup-container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  /* Left Section - Text and Background Image */
+  .left-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0F1D3D; /* Optional light background color */
+    padding: 20px;
+    width: 150vh;
+  }
+  
+  .text-container {
+    max-width: 400px;
+    text-align: center;
+    color: white; /* Dark text color for readability */
+  }
+  
+  .text-container p {
+    font-weight: 200;
+    color: white; /* Dark text color for readability */
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #E74C3C; /* Brand color or highlight color */
+  }
+  
+  p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: #E74C3C; /* Green color for motivation */
+  }
+  
+  .background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px; /* Optional rounded corners for the image */
+  }
+  
+  /* Right Section - Form Inputs */
+  .right-section {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff; /* Optional white background */
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+/*   
+  .input-field {
+    width: 60%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  } */
+
+  .input-field {
+    width: 80%; /* Adjusted width */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  
+  .btn {
+    width: 50%;
+    padding: 10px;
+    background-color: #E74C3C;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #0F1D3D;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .signup-container {
+      flex-direction: column;
+    }
+  }
+  
+
+  

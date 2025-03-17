@@ -1,117 +1,107 @@
-/* Container */
-.container {
-    display: flex;
-    height: 100vh;
-  }
-  .left-section {
-    width: 50%;
-    background: linear-gradient(to bottom, #0F1D3D, #1a2b4d);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    text-align: center;
-    margin-top: 0; /* Remove the extra space */
+
+
+ /* General body and layout styles */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;  /* Ensure the body takes full height of the viewport */
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-  .left-section h2{
-    font-size: 34px !important;
-    margin-top: 50px;
-  }
-  
-  .logo {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 15px;
-    margin-left: 200px;
-  }
-  
-  h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  p {
-    font-size: 14px;
-    margin-bottom: 20px;
-    max-width: 80%;
-  }
-  
-  /* Right Section - Registration */
-  .right-section {
-    width: 50%;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px; 
+  height: auto;
+  padding: 10px; 
+  margin-left: 180px;
+}
+/* Container for content */
+.container {
+  color: white;
+  text-align: center;
+  width: 280vh;
+  height: 80vh; /* Ensure the container takes the full viewport height */
+  background-image: url('../../src/background.png');
+  background-size: cover; /* Make the background image cover the entire container */
+  background-position: center center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent repeating the background */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Buttons container */
+.buttons {
+  margin-top: 20px;
+}
+
+/* Styling the buttons */
+.btn-signin {
+  background-color: #0F1D3D;
+  width: 180px;
+  height: 40px;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 2px solid white; /* Set the border color to white */
+  color: white; /* Ensure the text color is white */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Add transition for hover effect */
+}
+
+/* Optional hover effect */
+.btn-signin:hover {
+  background-color: #012e6d; /* Lighter color when hovered */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+.btn-signup {
+  background-color: #0F1D3D;
+  width: 180px;
+  height: 40px;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 2px solid white; /* Set the border color to white */
+  color: white; /* Ensure the text color is white */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Add transition for hover effect */
+}
+
+/* Optional hover effect */
+.btn-signup:hover {
+  background-color: #012e6d; /* Lighter color when hovered */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+.title{
+  color: #f5f5f5;
+ font-size: 34px !important; 
+  font-weight: normal;
+} 
+
+/* Optional: Add a shadow effect to buttons */
+button:active {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .container {
     padding: 20px;
   }
-  
-  h1 {
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 10px;
+
+  button {
+    width: 100%;
+    font-size: 14px;
+    padding: 12px;
   }
-  
-  h2 {
-    font-size: 20px;
-    margin-bottom: 15px;
-  }
-  
-  /* Input Fields */
-  .input-field {
-    width: 80%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  /* Buttons */
-  .btn {
-    width: 80%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #E74C3C;;
-    color: white;
-    cursor: pointer;
-    margin-top: 10px;
-    font-size: 16px;
-  }
-  
-  .btn:hover {
-    background-color: #E74C3C;
-  }
-  .right-section h2{
-    font-size: 55px !important;
-  }
-  .right-section p{
-    font-size: 16px;
-    color: #0F1D3D;
-  }
-  
-  .logo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 200px; /* Adjust size as needed */
-    height: auto;
-    padding: 10px; /* Optional: Adds some space around */
 }
-  /* Forgot Password */
-  .forgot-password {
-    font-size: 12px;
-    text-decoration: underline;
-    color: #0F1D3D;
-    margin-bottom: 10px;
-    cursor: pointer;
-  }
-  
-  .forgot-password:hover {
-    color: #0F1D3D;
-  }
-  
