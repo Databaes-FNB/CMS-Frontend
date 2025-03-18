@@ -51,11 +51,13 @@
 
 .time-display {
   font-size: 18px;
+  text-align: center;
 }
 
 .text {
   font-size: 16px;
   margin: 10px 0;
+  text-align: center;
 }
 
 .clock-btn {
@@ -64,19 +66,32 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  background-color: #E74C3C;
+}
+.clock-in :hover{
+  background-color: #E74C3C;
+  color: white;
 }
 
 .clock-in {
-  background-color: green;
+  background-color: #0F1D3D;;
   color: white;
 }
 
 .clock-out {
-  background-color: red;
+  background-color: #E74C3C;
+  color: white;
+
+}
+.clock-out:hover{
+  background-color: #E74C3C;;
   color: white;
 }
-
 .worked-time {
   font-size: 18px;
   margin-top: 20px;
+  text-align: center;
+}
+.clock-actions{
+  text-align: center;
 }

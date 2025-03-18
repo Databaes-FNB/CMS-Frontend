@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Calendar from 'react-calendar';
+import Sidebar from "./Sidebar"; // Sidebar is already imported
 import './EventCalendar.css'
 
 function EventCalendar() {
@@ -29,6 +30,8 @@ function EventCalendar() {
 
   return (
     <div className="event-calendar-container">
+   <Sidebar />  
+
       <h2>Event Calendar</h2>
       <Calendar
         onChange={handleDateChange}
@@ -49,7 +52,7 @@ function EventCalendar() {
           onChange={(e) => setEventDescription(e.target.value)}
           placeholder="Enter event description"
         />
-        <button onClick={handleAddEvent}>Add Event</button>
+        <button className='event-btn' onClick={handleAddEvent}>Add Event</button>
       </div>
       <div className="events-list">
         <h3>Events on {date.toLocaleDateString()}:</h3>

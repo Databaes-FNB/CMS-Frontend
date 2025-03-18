@@ -1,15 +1,19 @@
 // ContractStatus.js
 import React, { useState } from "react";
 import "./ContractStatus.css";
+import AdminSidebar from "./AdminSidebar"; // Import the Sidebar
 
 function ContractStatus() {
   const [contractData, setContractData] = useState([
-    { id: 1, username: "John Doe", contractEndDate: "2025-06-30", status: "Active" },
-    { id: 2, username: "Jane Smith", contractEndDate: "2025-12-15", status: "Expired" },
+    { id: 1, username: "Desree Madiba", contractEndDate: "2025-06-30", status: "Active" },
+    { id: 2, username: "Mduduzi Nyathi", contractEndDate: "2025-12-15", status: "Expired" },
+    { id: 1, username: "Nkosinathi Sibiya", contractEndDate: "2025-06-30", status: "Active" },
+    { id: 2, username: "Leeson Govender", contractEndDate: "2025-12-15", status: "Expired" },
   ]);
 
   return (
     <div className="contract-status-container">
+      <AdminSidebar />
       <h2>Intern Contract Status</h2>
       <table className="contract-status-table">
         <thead>

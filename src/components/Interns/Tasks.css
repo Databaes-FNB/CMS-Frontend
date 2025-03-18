@@ -1,15 +1,14 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
   margin: 0;
   padding: 0;
 }
 
-.container {
+.tasks-container {
   max-width: 1200px;
   margin: 50px auto;
   padding: 20px;
-  background-color: white;
+  background-color: #ffffff; /* White background for better contrast with dark background */
   border-radius: 8px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
@@ -17,53 +16,63 @@ body {
 h1 {
   text-align: center;
   margin-bottom: 30px;
+  color: #333; /* Light text color for the heading */
 }
 
 .task-cards {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
+  grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
   gap: 20px;
 }
 
 .card {
-  background-color: #fff;
+  background-color: #fff; /* White background for cards */
   padding: 15px;
   border-radius: 8px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* This makes sure the button is aligned to the bottom */
-  height: 250px; /* Fixed height for consistent card size */
+  justify-content: space-between; /* Ensure button is pushed to the bottom */
+  height: 250px; /* Fixed height for consistency */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Lift card effect on hover */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
 }
 
 .card h2 {
   text-align: center;
   font-size: 18px;
   margin-bottom: 15px;
+  color: #333; /* Dark text for better readability */
 }
 
 .card p {
   text-align: center;
   font-size: 14px;
+  color: #555; /* Slightly lighter color for body text */
 }
 
-button {
+.access-btn {
   padding: 10px;
-  background-color: #4CAF50;
+  background-color: #E74C3C; /* Button color */
   color: white;
   border: none;
   cursor: pointer;
   border-radius: 5px;
   font-size: 14px;
-  margin-top: auto; /* Ensures the button is pushed to the bottom */
+  margin-top: auto; /* Ensures the button stays at the bottom */
+  transition: background-color 0.3s ease; /* Smooth button hover effect */
 }
 
-button:disabled {
-  background-color: #cccccc;
+.access-btn:disabled {
+  background-color: #cccccc; /* Disabled button color */
 }
 
-button:hover {
-  background-color: #45a049;
+.access-btn:hover {
+  background-color: #C0392B; /* Darker button color on hover */
 }
 
 .modal {

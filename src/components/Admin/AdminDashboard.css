@@ -1,131 +1,46 @@
-/* .admin-dashboard {
-    padding: 20px;
-  }
-  
-  h1 {
-    text-align: center;
-    color: #333;
-  }
-  
-  .section {
-    margin-top: 30px;
-  }
-  
-  section h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-  }
-  
-  table th,
-  table td {
-    padding: 10px;
-    text-align: left;
-    border: 1px solid #ddd;
-  }
-  
-  table th {
-    background-color: #f4f4f4;
-  }
-  
-  button {
-    margin: 5px;
-    padding: 8px 12px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
-  
-  button:disabled {
-    background-color: #ccc;
-  }
-  
-  button:active {
-    background-color: #0056b3;
-  }
-  
-  a {
-    color: #007bff;
-    text-decoration: none;
-  }
-   */
-   .admin-sidebar {
-    height: 100vh;
-    width: 250px;
-    background-color: #2c3e50;
-    color: white;
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding: 20px;
-    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .admin-logo {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  .admin-sidebar nav ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .admin-sidebar nav ul li {
-    margin: 15px 0;
-  }
-  
-  .sidebar-link {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    display: block;
-    padding: 10px;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .sidebar-link:hover {
-    background-color: #34495e;
-  }
-  
-  /* Specific link styles */
-  .dashboard-link {
-    background-color: #2980b9;
-  }
-  
-  .leave-requests-link {
-    background-color: #16a085;
-  }
-  
-  .active-users-link {
-    background-color: #f39c12;
-  }
-  
-  .contract-status-link {
-    background-color: #8e44ad;
-  }
-  
-  .settings-link {
-    background-color: #e74c3c;
-  }
-  
-  /* Active link styling */
-  .sidebar-link:active {
-    background-color: #2c3e50;
-  }
-  
-  /* You can also add more specific styles for each section if needed */
-  
+/* AdminDashboard.css */
+
+/* Ensure the dashboard container takes up the full height of the viewport */
+.admin-dashboard-container {
+  display: flex;
+  height: 100vh; /* Full viewport height */
+  flex-direction: row; /* Keep the sidebar and content side by side */
+  justify-content: center; /* Horizontally center content */
+  align-items: center; /* Vertically center content */
+
+}
+
+/* Admin sidebar styling (this stays the same, assuming you already have styles for the sidebar) */
+.admin-sidebar {
+  width: 250px; /* Adjust the sidebar width as needed */
+  background-color: #2c3e50;
+  color: white;
+  height: 100%;
+  padding: 20px;
+}
+
+/* Admin content area */
+.admin-dashboard-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically center content */
+  align-items: center; /* Horizontally center content */
+  flex-grow: 1; /* Take up remaining space after sidebar */
+  padding: 20px;
+  text-align: center; /* Center text inside the content */
+  background-color: #f4f4f4;
+  max-width: 900px; /* Optional: Limit the width to prevent content from being too stretched */
+  width: 100%; /* Ensure the content expands to take available space */
+}
+
+/* Styling for the h1 and paragraph inside the content */
+.admin-dashboard-content h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.admin-dashboard-content p {
+  font-size: 1.2rem;
+  color: #555;
+}
+

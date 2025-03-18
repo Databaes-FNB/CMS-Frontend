@@ -58,7 +58,7 @@ table th {
 /* Submit button styling */
 .submit-btn button {
   padding: 12px 40px;
-  background-color: #3498db;
+  background-color:  #0F1D3D;;
   color: white;
   border: none;
   border-radius: 5px;
@@ -68,7 +68,7 @@ table th {
 }
 
 .submit-btn button:hover {
-  background-color: #2980b9;
+  background-color:  #E74C3C;
 }
 
 /* Status message styling */

@@ -1,36 +1,33 @@
-import React from "react";
-import { Link } from "react-router-dom"; // Link to navigate without refreshing
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTrophy, faTasks, faCalendarAlt, faSignOutAlt } from "@fortawesome/free-solid-svg-icons"; // Icons for Mentor sidebar
-import "./MentorSidebar.css"; // Separate styling for Mentor Sidebar
+// components/Mentor/MentorSidebar.js
 
-const MentorSidebar = () => {
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './MentorSidebar.css'; // Optional: To apply custom styling for the sidebar
+
+function MentorSidebar() {
   return (
     <div className="mentor-sidebar">
-      <h2 className="mentor-logo">Mentor Panel</h2>
-      <nav>
+      <div className="sidebar-header">
+        <h2>Mentor Dashboard</h2>
+      </div>
+      <nav className="sidebar-nav">
         <ul>
           <li>
-            <Link to="/mentor/dashboard" className="sidebar-link dashboard-link">Dashboard</Link>
+            <Link to="/mentor/dashboard">Dashboard</Link>
           </li>
           <li>
-            <Link to="/mentor/assessments" className="sidebar-link assessments-link">Assessments</Link>
+            <Link to="/mentor/tasks">Tasks</Link>
           </li>
           <li>
-            <Link to="/mentor/leave-requests" className="sidebar-link leave-requests-link">Leave Requests</Link>
+            <Link to="/mentor/interns">Interns</Link>
           </li>
           <li>
-            <Link to="/mentor/events" className="sidebar-link events-link">Events</Link>
-          </li>
-          <li>
-            <Link to="/" className="sidebar-link logout-link">
-              <FontAwesomeIcon icon={faSignOutAlt} className="nav-icon" /> Logout
-            </Link>
+            <Link to="/mentor/reviews">Reviews</Link>
           </li>
         </ul>
       </nav>
     </div>
   );
-};
+}
 
 export default MentorSidebar;

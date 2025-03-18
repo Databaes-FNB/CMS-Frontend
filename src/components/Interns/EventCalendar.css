@@ -3,6 +3,7 @@
     width: 80%;
     margin: 0 auto;
     text-align: center;
+    margin-left: 390px;
   }
   
   .event-details {
@@ -18,18 +19,18 @@
     border-radius: 4px;
   }
   
-  button {
+  .event-btn {
     margin-top: 10px;
     padding: 10px 20px;
-    background-color: #4CAF50;
+    background-color: #0F1D3D;;
     color: white;
     border: none;
     cursor: pointer;
     border-radius: 4px;
   }
   
-  button:hover {
-    background-color: #45a049;
+  .event-btn:hover {
+    background-color: #E74C3C;
   }
   
   .events-list {
