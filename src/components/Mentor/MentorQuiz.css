@@ -1,0 +1,47 @@
+/* Style the mentor dashboard */
+.mentor-dashboard {
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Style for the quiz list */
+  ul {
+    padding-left: 20px;
+  }
+  
+  /* Style for each quiz item */
+  .quiz-item {
+    background-color: #ffffff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .quiz-item h4 {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .quiz-item p {
+    color: #555;
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  
+  .quiz-item strong {
+    color: #4CAF50;
+  }
+  
+  /* Message when no quizzes are uploaded */
+  .mentor-dashboard p {
+    font-size: 16px;
+    color: #888;
+  }
+  
