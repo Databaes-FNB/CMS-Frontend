@@ -94,8 +94,8 @@ function MentorSidebar() {
                 </Link>
               </li>
               <li>
-                <Link to="/mentor/settings" className="sidebar-link settings-link">
-                  Settings
+                <Link to="/" className="sidebar-link logout-link">
+                  Logout
                 </Link>
               </li>
             </ul>
