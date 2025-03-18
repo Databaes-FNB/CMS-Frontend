@@ -9,10 +9,24 @@ function Leave({ addLeaveRequest }) {
   const [endDate, setEndDate] = useState('');
   const [returnDate, setReturnDate] = useState('');
   const [leaveStatus, setLeaveStatus] = useState('');
+  const [errorMessage, setErrorMessage] = useState(''); // State for error messages
 
   const handleSubmit = (event) => {
     event.preventDefault();
     setLeaveStatus('Pending');
+    setErrorMessage(''); // Reset any previous error message
+
+    // Validate that the end date is after the start date
+    if (new Date(endDate) <= new Date(startDate)) {
+      setErrorMessage('End date must be after the start date.');
+      return;
+    }
+
+    // Validate that the return date is after the end date
+    if (new Date(returnDate) <= new Date(endDate)) {
+      setErrorMessage('Return date must be after the end date.');
+      return;
+    }
 
     const newLeaveRequest = {
       id: Date.now(),  // generate a unique id
@@ -120,6 +134,12 @@ function Leave({ addLeaveRequest }) {
           {leaveStatus && (
             <div className="status-message">
               <strong>Leave Status:</strong> {leaveStatus}
+            </div>
+          )}
+
+          {errorMessage && (
+            <div className="error-message">
+              <strong>Error:</strong> {errorMessage}
             </div>
           )}
         </form>
