@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Leave.css';
 import Sidebar from './Sidebar';
 
-function Leave({ addLeaveRequest }) {  // accept addLeaveRequest function as prop
+function Leave({ addLeaveRequest }) {
   const [name, setName] = useState('');
   const [leaveType, setLeaveType] = useState('');
   const [startDate, setStartDate] = useState('');
@@ -21,8 +21,11 @@ function Leave({ addLeaveRequest }) {  // accept addLeaveRequest function as pro
       status: 'Pending',
     };
 
-    // Call the parent function to add the leave request
-    addLeaveRequest(newLeaveRequest);
+    if (addLeaveRequest && typeof addLeaveRequest === 'function') {
+      addLeaveRequest(newLeaveRequest);
+    } else {
+      console.error('addLeaveRequest is not a function');
+    }
 
     alert(`Leave Application Submitted:
       Name: ${name}
@@ -34,18 +37,18 @@ function Leave({ addLeaveRequest }) {  // accept addLeaveRequest function as pro
 
   return (
     <div className="leave-container">
-      <Sidebar />  
+      <Sidebar />
       <div className="leave-form-container">
         <form onSubmit={handleSubmit}>
           <h2>Leave Application Form</h2>
           <div>
-            <input 
-              type="text" 
+            <input
+              type="text"
               className="leave-input"
-              value={name} 
-              onChange={(e) => setName(e.target.value)} 
-              placeholder="Enter your full name" 
-              required 
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              placeholder="Enter your full name"
+              required
             />
           </div>
 
@@ -61,9 +64,9 @@ function Leave({ addLeaveRequest }) {  // accept addLeaveRequest function as pro
             <tbody>
               <tr>
                 <td>
-                  <select 
-                    value={leaveType} 
-                    onChange={(e) => setLeaveType(e.target.value)} 
+                  <select
+                    value={leaveType}
+                    onChange={(e) => setLeaveType(e.target.value)}
                     required
                   >
                     <option value="">Select Leave Type</option>
@@ -75,26 +78,26 @@ function Leave({ addLeaveRequest }) {  // accept addLeaveRequest function as pro
                   </select>
                 </td>
                 <td>
-                  <input 
-                    type="date" 
-                    value={startDate} 
-                    onChange={(e) => setStartDate(e.target.value)} 
+                  <input
+                    type="date"
+                    value={startDate}
+                    onChange={(e) => setStartDate(e.target.value)}
                     required
                   />
                 </td>
                 <td>
-                  <input 
-                    type="date" 
-                    value={endDate} 
-                    onChange={(e) => setEndDate(e.target.value)} 
+                  <input
+                    type="date"
+                    value={endDate}
+                    onChange={(e) => setEndDate(e.target.value)}
                     required
                   />
                 </td>
                 <td>
-                  <input 
-                    type="date" 
-                    value={returnDate} 
-                    onChange={(e) => setReturnDate(e.target.value)} 
+                  <input
+                    type="date"
+                    value={returnDate}
+                    onChange={(e) => setReturnDate(e.target.value)}
                     required
                   />
                 </td>
