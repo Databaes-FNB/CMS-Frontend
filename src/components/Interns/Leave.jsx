@@ -33,6 +33,14 @@ function Leave({ addLeaveRequest }) {
       Start Date: ${startDate}
       End Date: ${endDate}
       Date Back in Office: ${returnDate}`);
+
+    // Reset the form fields after submission
+    setName('');
+    setLeaveType('');
+    setStartDate('');
+    setEndDate('');
+    setReturnDate('');
+    setLeaveStatus(''); // Optional: Clear status after submission
   };
 
   return (
