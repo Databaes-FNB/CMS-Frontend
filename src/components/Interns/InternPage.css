@@ -1,0 +1,98 @@
+/* InternPage.css */
+/* Page Container to allow for sidebar positioning */
+.page-container {
+  display: flex;
+  height: 100vh;  /* Full viewport height */
+
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 500px; /* Set a fixed width for the sidebar */
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px;
+  height: 100%; /* Full height */
+
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 15px 0;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
+}
+
+/* Main content area */
+/* .content {
+  margin-right: 250px;
+  padding: 20px;
+  width: 100%;
+  background-color: #f4f4f4;
+  height: 100%;
+} */
+
+/* Other content styles */
+.welcome-message {
+  font-size: 36px;
+  margin-top: 120px;
+}
+
+.time-display {
+  font-size: 18px;
+  text-align: center;
+}
+
+.text {
+  font-size: 16px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.clock-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #E74C3C;
+}
+.clock-in :hover{
+  background-color: #E74C3C;
+  color: white;
+}
+
+.clock-in {
+  background-color: #0F1D3D;;
+  color: white;
+}
+
+.clock-out {
+  background-color: #E74C3C;
+  color: white;
+
+}
+.clock-out:hover{
+  background-color: #E74C3C;;
+  color: white;
+}
+.worked-time {
+  font-size: 18px;
+  margin-top: 20px;
+  text-align: center;
+}
+.clock-actions{
+  text-align: center;
+}

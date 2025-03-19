@@ -1,0 +1,46 @@
+/* Styling for MentorReviews */
+.review-list {
+    margin-top: 20px;
+  }
+  
+  .review-item {
+    margin: 15px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .review-item h3 {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .review-item p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .review-item textarea {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .review-item button {
+    padding: 10px 15px;
+    background-color:  #E74C3C;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .review-item button:hover {
+    background-color:  #E74C3C;
+  }
+  

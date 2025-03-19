@@ -1,0 +1,96 @@
+/* Container for the page */
+
+
+/* Form container */
+
+/* Styling for the heading */
+.leave-form-container h2 {
+  text-align: center;
+  font-size: 32px; /* Larger font size for the heading */
+  margin-bottom: 30px; /* Space below the heading */
+  color: white; /* Dark text for good contrast */
+ 
+}
+
+/* Input fields styling */
+.leave-input, .leave-form-container select, .leave-form-container input[type="date"] {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9; /* Light background for the input */
+  font-size: 16px;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px; /* Space below the table */
+}
+
+table th, table td {
+  padding: 15px;
+  text-align: left;
+  border: 1px solid #ddd; /* Light border around table cells */
+}
+
+table th {
+  background-color: #f1f1f1; /* Light background for headers */
+}
+
+/* Submit button styling */
+.submit-btn button {
+  padding: 12px 40px;
+  background-color:  #0F1D3D;;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn button:hover {
+  background-color:  #E74C3C;
+}
+
+/* Status message styling */
+.status-message {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.status-message strong {
+  color: #2ecc71; /* Green color for success messages */
+}
+
+/* Ensuring responsiveness */
+@media (max-width: 768px) {
+  .leave-container {
+    margin-left: 0; /* Remove left margin for small screens */
+    padding: 15px;
+  }
+
+  .leave-form-container {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .leave-form-container h2 {
+    font-size: 28px; /* Slightly smaller font size for smaller screens */
+  }
+
+  .leave-input, .leave-form-container select, .leave-form-container input[type="date"] {
+    padding: 8px;
+    font-size: 14px; /* Smaller font size for small screens */
+  }
+
+  .submit-btn button {
+    padding: 10px 25px; /* Smaller padding for buttons */
+    font-size: 14px;
+  }
+}

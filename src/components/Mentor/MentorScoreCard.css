@@ -1,0 +1,52 @@
+/* Styling for the Mentor Scorecard Component */
+.mentor-scorecard-container h1 {
+  text-align: center;
+  color: white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 16px;
+  color: white;
+}
+
+.mentor-input[type="text"],
+.mentor-input[type="number"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 100%;
+  max-width: 400px;
+  margin-top: 5px;
+}
+
+.mentor-btn-score {
+  padding: 10px 15px;
+  border: none;
+  background-color:  #0F1D3D;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.mentor-btn-score:hover {
+  background-color:  #C0392B;
+}
+
+input:focus,
+button:focus {
+  outline: none;
+}

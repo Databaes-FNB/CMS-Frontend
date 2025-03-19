@@ -1,0 +1,174 @@
+/* SignIn.css
+.signin-container {
+  display: flex;
+  height: 100vh;
+}
+
+.left-section {
+  flex: 1;
+  background: #0F1D3D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.text-container h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.text-container p {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.right-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+}
+
+.right-section h2 {
+  margin-bottom: 20px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #E74C3C;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0F1D3D;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+p {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+span {
+  font-weight: bold;
+} */
+
+
+/* SignIn.css */
+.signin-page .signin-container {
+  display: flex;
+  height: 100vh;
+}
+
+.signin-page .left-section {
+  flex: 1;
+  background: #0F1D3D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.signin-page .right-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+}
+
+.signin-page .input-field {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.signin-page .btn {
+  padding: 10px 20px;
+  background-color: #E74C3C;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.signin-page .error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.input-section{
+  margin-top: 180px;
+}
+.input-section h2{
+align-items: center;
+text-align: center;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #E74C3C;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 420px;
+}
+
+
+.input-field-1 {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+
+}
+
+/* SignIn.css */
+
+/* Style for the Forgot Password text link */
+.forgot-password-container {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.forgot-password-link {
+  color: #0f1d3d; /* Match the primary button color */
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: underline; /* Make it look like a link */
+  display: inline-block;
+
+
+}
+
+.forgot-password-link:hover {
+  color: #012e6d; /* Lighter color on hover */
+}

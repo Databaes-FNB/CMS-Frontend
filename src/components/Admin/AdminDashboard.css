@@ -1,0 +1,29 @@
+
+
+/* Admin sidebar styling (this stays the same, assuming you already have styles for the sidebar) */
+.admin-sidebar {
+  width: 250px; /* Adjust the sidebar width as needed */
+  background-color: #0F1D3D;
+  color: white;
+  height: 100%;
+  padding: 20px;
+}
+
+/* Admin content area */
+
+/* Styling for the h1 and paragraph inside the content */
+.admin-dashboard-content h1 {
+  font-size: 2.5rem;
+  color: white;
+
+}
+
+.admin-dashboard-content p {
+  font-size: 1.2rem;
+  color: rgb(10, 10, 10);
+
+}
+
+.admin-dashboard-content{
+  margin-bottom: 250px;
+}

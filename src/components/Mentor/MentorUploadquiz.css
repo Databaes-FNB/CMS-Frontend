@@ -1,0 +1,70 @@
+/* MentorUploadquiz CSS */
+
+.mentor-upload-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 350px;
+  } 
+  
+  .mentor-upload-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .mentor-upload-container input,
+  .mentor-upload-container textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .mentor-upload-container input[type="date"],
+  .mentor-upload-container input[type="time"] {
+    max-width: 250px;
+  }
+  
+  .mentor-upload-container textarea {
+    height: 120px;
+    resize: vertical;
+  }
+  
+  .mentor-upload-container button {
+    width: 100%;
+    max-width: 200px;
+    padding: 10px;
+    background-color:  #0F1D3D;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .mentor-upload-container button:hover {
+    background-color:  #0F1D3D;
+  
+  }
+  
+  .mentor-upload-container button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .mentor-upload-container input:focus,
+  .mentor-upload-container textarea:focus {
+    border-color:  gray;
+    outline: none;
+  }
+  
